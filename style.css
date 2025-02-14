@@ -1,0 +1,46 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 22vh 7vh minmax(62vh, auto) 5vh;
+
+  grid-template-areas: "A" "B" "C" "D" ;
+}
+
+.img{
+    grid-area: A ;
+    background-image: url(img/Skärmbild\ 2025-02-07\ 135328.png);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+.text-style{ 
+    grid-area: A;
+    text-align: center;
+    font-family: 'Poppins', sans-serif, 'Arial';
+    margin-top: 40px;
+    font-size: 27px;
+    color: white;
+    -webkit-text-stroke: 1.5px black;
+    font-weight: bold;
+}
+
+
+nav{
+    grid-area: B;
+    font-family: 'Poppins', sans-serif, 'Arial';
+    text-align: center;
+    margin: 7px ;
+    word-spacing: 20px;
+
+}
+.nav-text{
+    font-size: 10px;
+}
+.ÖnskeLista{
+
+background-color: darkblue;
+
+}
+.KundVagn{
+
+}
