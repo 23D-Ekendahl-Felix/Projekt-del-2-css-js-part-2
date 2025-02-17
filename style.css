@@ -1,9 +1,9 @@
 body{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 22vh 0.5vh 7vh minmax(60vh, auto) 5vh;
-
-  grid-template-areas: "A" "B" "C" "D" "E" ;
+    grid-template-rows: 22vh 0.5vh 7vh 200vh 5vh;
+    grid-template-areas: "A" "B" "C" "D" "E" ;
+    margin: 0;
 }
 
 .img{
@@ -23,6 +23,7 @@ body{
     -webkit-text-stroke: 1.5px black;
     font-weight: bold;
 }
+
 
 nav-strek{
     background-color: blue;
@@ -54,5 +55,35 @@ border-radius: 10px;
     color: black;
     background-color: rgb(73, 233, 49);
     padding: 4px;
+    border-radius: 10px;
+}
+
+.Shop{
+    grid-area: D;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    grid-template-areas:
+    "Z" 
+    "X" 
+    "C"
+    "V";
+    gap: 10px;
+    margin: 10px;
+}
+.Shop1{
+    background-color: rgb(73, 73, 73);
+    border-radius: 10px;
+}
+.Shop2{
+    background-color: rgb(73, 73, 73);
+    border-radius: 10px;
+}
+.Shop3{
+    background-color: rgb(73, 73, 73);
+    border-radius: 10px;
+}
+.Shop4{
+    background-color: rgb(73, 73, 73);
     border-radius: 10px;
 }
