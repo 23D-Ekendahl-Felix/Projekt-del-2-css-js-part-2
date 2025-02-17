@@ -1,9 +1,9 @@
 body{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 22vh 7vh minmax(62vh, auto) 5vh;
+    grid-template-rows: 22vh 0.5vh 7vh minmax(60vh, auto) 5vh;
 
-  grid-template-areas: "A" "B" "C" "D" ;
+  grid-template-areas: "A" "B" "C" "D" "E" ;
 }
 
 .img{
@@ -24,23 +24,35 @@ body{
     font-weight: bold;
 }
 
-
+nav-strek{
+    background-color: blue;
+}
 nav{
-    grid-area: B;
+    grid-area: C;
+    background-color: rgb(73, 73, 73);
+}
+nav-nav{
+    grid-area: C;
     font-family: 'Poppins', sans-serif, 'Arial';
     text-align: center;
-    margin: 7px ;
-    word-spacing: 20px;
-
+    word-spacing: 10px;
+    justify-content: center;
+    margin: 8px;
 }
 .nav-text{
-    font-size: 10px;
+    color: white;
+    font-size: 12px;
+    
 }
 .ÖnskeLista{
-
-background-color: darkblue;
-
+color: black;
+background-color: rgb(50, 50, 236);
+padding: 4px;
+border-radius: 10px;
 }
 .KundVagn{
-
+    color: black;
+    background-color: rgb(73, 233, 49);
+    padding: 4px;
+    border-radius: 10px;
 }
