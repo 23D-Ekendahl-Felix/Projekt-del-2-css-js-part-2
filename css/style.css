@@ -75,23 +75,23 @@ border-radius: 10px;
     border-radius: 10px;
     color: white;
 }
-.text1, .text2, .text3, .text4{
-    font-family: 'Poppins', sans-serif, 'Arial';
-    font-size: 2px;
-    text-align: right;
-}
-.knappar, .knappar2, .knappar3, .knappar4{
+
+.knappar1, .knappar2, .knappar3, .knappar4{
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 10px;
+    margin-top: 10px;
 }
 button{
 size: 20px;
 }
 
 .img1, .img2, .img3, .img4{
-    margin: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
     border-radius: 5px;
 }
 
