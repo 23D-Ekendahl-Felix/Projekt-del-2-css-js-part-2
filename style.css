@@ -1,10 +1,11 @@
 body{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 22vh 0.5vh 7vh 200vh 5vh;
+    grid-template-rows: 22vh 0.5vh 7vh 230vh 5vh;
     grid-template-areas: "A" "B" "C" "D" "E" ;
     margin: 0;
 }
+
 
 .img{
     grid-area: A ;
@@ -44,18 +45,77 @@ nav-nav{
     color: white;
     font-size: 12px;   
 }
-.ÖnskeLista{
-color: black;
-background-color: rgb(50, 50, 236);
-padding: 4px;
-border-radius: 10px;
-}
 .KundVagn{
     color: black;
     background-color: rgb(73, 233, 49);
     padding: 4px;
     border-radius: 10px;
 }
+.menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: rgb(58, 187, 38);
+    padding-top: 50px;
+    transition: 0.3s;
+}
+.menu.show{
+    right: 0;
+}
+.menu a{
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+.back-btn {
+    display: block;
+    padding: 8px;
+    background: #ffffff;
+    color: #000000;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.ÖnskeLista {
+    color: black;
+    background-color: rgb(50, 50, 236);
+    padding: 4px;
+    border-radius: 10px;
+}
+.wishlist {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: rgb(100, 100, 255);
+    padding-top: 50px;
+    transition: 0.3s;
+}
+.wishlist.show {
+    left: 0;
+}
+.wishlist a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+.back-btn {
+    display: block;
+    padding: 8px;
+    background: #ffffff;
+    color: #000000;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
 
 .Shop{
     grid-area: D;
@@ -75,7 +135,12 @@ border-radius: 10px;
     border-radius: 10px;
     color: white;
 }
-
+.namn, .pris{
+    text-align: center;
+    font-family: 'Poppins', sans-serif, 'Arial';
+    font-size: 15px;
+    margin: 5px;
+}
 .knappar1, .knappar2, .knappar3, .knappar4{
     display: flex;
     flex-direction: row;
@@ -83,10 +148,6 @@ border-radius: 10px;
     gap: 10px;
     margin-top: 10px;
 }
-button{
-size: 20px;
-}
-
 .img1, .img2, .img3, .img4{
     display: block;
     margin-left: auto;
@@ -100,10 +161,145 @@ footer{
     grid-area: E;
     background-color: rgb(73, 73, 73);
     display: flex;
-    flex-direction: row;}
+    flex-direction: row;
+}
 .footer-text{
     color: white;
     font-family: 'Poppins', sans-serif, 'Arial';
     font-size: 10px;
     margin: 7px;
+}
+
+
+
+
+@media screen and (min-width: 768px){
+    body{
+        grid-template-columns: 1fr ;
+        grid-template-rows: 22vh 0.5vh 7vh 130vh 5vh;
+        grid-template-areas: "A " "B " "C " "D " "D " "E ";
+    }
+
+    .img{
+        grid-area: A ;
+        background-image: url(img/Skärmbild\ 2025-02-07\ 135328.png);
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat; 
+    }
+    .text-style{ 
+        grid-area: A;
+        text-align: center;
+        font-family: 'Poppins', sans-serif, 'Arial';
+        margin-top: 40px;
+        font-size: 46px;
+        color: white;
+        -webkit-text-stroke: 2px black;
+        font-weight: bold;
+    }
+
+
+    nav{
+        grid-area: C;
+        background-color: rgb(73, 73, 73);
+    }
+
+
+    .Shop{
+        grid-area: D;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "Z X " 
+        "C V";
+        gap: 10px;
+        margin: 10px;
+    }
+    .Shop1, .Shop2, .Shop3, .Shop4{
+        background-color: rgb(73, 73, 73);
+        border-radius: 10px;
+        color: white;
+    }
+    .namn, .pris{
+        justify-content: center;
+        text-align: center;
+        font-family: 'Poppins', sans-serif, 'Arial';
+        font-size: 30px;
+        margin: 5px;
+    }
+    .knappar1, .knappar2, .knappar3, .knappar4{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    } 
+}
+
+
+
+
+@media screen and (min-width: 1024px){
+    body{
+        grid-template-columns: 1fr ;
+        grid-template-rows: 22vh 0.5vh 7vh 130vh 5vh;
+        grid-template-areas: "A " "B " "C " "D " "D " "E ";
+    }
+   
+   
+    .img{
+        grid-area: A ;
+        background-image: url(img/Skärmbild\ 2025-02-07\ 135328.png);
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat; 
+    }
+    .text-style{ 
+        grid-area: A;
+        text-align: center;
+        font-family: 'Poppins', sans-serif, 'Arial';
+        margin-top: 40px;
+        font-size: 60px;
+        color: white;
+        -webkit-text-stroke: 3px black;
+        font-weight: bold;
+    }
+    
+    
+    nav{
+        grid-area: C;
+        background-color: rgb(73, 73, 73);
+    }
+   
+   
+    .Shop{
+        grid-area: D;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "Z X " 
+        "C V";
+        gap: 10px;
+        margin: 10px;
+    }
+    .Shop1, .Shop2, .Shop3, .Shop4{
+        background-color: rgb(73, 73, 73);
+        border-radius: 10px;
+        color: white;
+    }
+    .namn, .pris{
+        text-align: center;
+        font-family: 'Poppins', sans-serif, 'Arial';
+        font-size: 25px;
+        margin: 5px;
+    }
+    .knappar1, .knappar2, .knappar3, .knappar4{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
 }
