@@ -1,8 +1,8 @@
 body{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 22vh 0.5vh 7vh 230vh 5vh;
-    grid-template-areas: "A" "B" "C" "D" "E" ;
+    grid-template-rows: 22vh 0.5vh 7vh 7vh 230vh 5vh;
+    grid-template-areas: "A" "B" "C" "F" "D" "E" ;
     margin: 0;
 }
 
@@ -117,13 +117,16 @@ nav-nav{
 }
 
 .search{
-    grid-area: c;
+    grid-area: F;
     background-color: rgb(73, 73, 73);
+    color: #ffffff;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 10px;
-    margin: 10px;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 10px;
 }
 
 .Shop{
@@ -185,8 +188,8 @@ footer{
 @media screen and (min-width: 768px){
     body{
         grid-template-columns: 1fr ;
-        grid-template-rows: 22vh 0.5vh 7vh 130vh 5vh;
-        grid-template-areas: "A " "B " "C " "D " "D " "E ";
+        grid-template-rows: 22vh 0.5vh 7vh 7vh 130vh 5vh;
+        grid-template-areas: "A " "B " "C " "F" "D " "E ";
     }
 
     .img{
@@ -252,8 +255,8 @@ footer{
 @media screen and (min-width: 1024px){
     body{
         grid-template-columns: 1fr ;
-        grid-template-rows: 22vh 0.5vh 7vh 130vh 5vh;
-        grid-template-areas: "A " "B " "C " "D " "D " "E ";
+        grid-template-rows: 22vh 0.5vh 7vh 7vh 90vh 5vh;
+        grid-template-areas: "A " "B " "C " "F" "D" "E ";
     }
    
    
@@ -281,6 +284,7 @@ footer{
         background-color: rgb(73, 73, 73);
     }
    
+
    
     .Shop{
         grid-area: D;
