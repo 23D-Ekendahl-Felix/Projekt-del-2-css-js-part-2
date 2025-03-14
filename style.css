@@ -116,6 +116,15 @@ nav-nav{
     border-radius: 5px;
 }
 
+.search{
+    grid-area: c;
+    background-color: rgb(73, 73, 73);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px;
+}
 
 .Shop{
     grid-area: D;

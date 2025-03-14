@@ -32,3 +32,16 @@ var menu = document.getElementById("menu")
 menu.classList.toggle("show");
 }
 
+function searchProduct() {
+    let searchTerm = document.getElementById("search").value.toLowerCase();
+    let products = document.querySelectorAll(".Shop > div");
+
+    products.forEach(product => {
+        let productName = product.querySelector(".namn").textContent.toLowerCase();
+        if (productName.includes(searchTerm)) {
+            product.style.display = "block";  // Visa om det matchar
+        } else {
+            product.style.display = "none";   // Dölj om det inte matchar
+        }
+    });
+}
